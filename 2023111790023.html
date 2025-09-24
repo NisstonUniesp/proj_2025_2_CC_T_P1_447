@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: url('https://th.bing.com/th/id/R.4449633bc36f8124dbf196e3880c5b4c?rik=S%2fyra%2fykOZ3xEA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1889239.jpg&ehk=2KJ8ItgAp1twPPEOAxc9DdwAyaY3h5s6tlSA2GoXr8M%3d&risl=&pid=ImgRaw&r=0') center center no-repeat;
+            background-size: cover;
+        }
+
+        html { 
+            scroll-behavior: smooth;
+        }
+
+        button {
+            background-color: #4b2e83;
+            color: #f0e6d2;
+            border: 2px solid #f0e6d2;
+            padding: .3rem .6rem;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background-color: #f0e6d2;
+            color: #4b2e83;
+        }
+
+        button:hover > i {
+            color: #4b2e83;
+        }
+
+        button i {
+            color: #f0e6d2;
+            font-weight: bold;
+            pointer-events: none;
+        }
+
+        input, select {
+            padding: .25rem .5rem;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .cv-container { 
+            max-width: 450px;
+            margin: 5rem auto;
+            background-color: rgba(91, 60, 142, 0.9);
+            padding: 2rem;
+            border-radius: 16px; 
+        }
+
+        .cv-container header {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 0 1rem 1rem;
+            border-bottom: 1px solid #f0e6d2;
+        }
+
+        .cv-container header h1 {
+            font-size: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section ul {
+            list-style-type: none;
+        }
+
+        .section ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-info {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .contact-info a {
+            color: #f0e6d2;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #4b2e83;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-links a {
+            color: #f0e6d2;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #4b2e83;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>Currículo Vitae</h1>
+        </header>
+
+        <div class="section contact-info">
+            <h2>Informações de Contato</h2>
+            <p><strong>Nome:</strong> Ian Albuquerque</p>
+            <p><strong>Email:</strong> ianjudo552@gmail.com</p>  
+        </div>
+
+
+        <div class="section">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Graduando em Sistemas da Internet</strong> - Uniesp</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Java, React</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Banco de Dados: MySQL, MongoDB</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certificações</h2>
+            <ul>
+                <li><strong>Curso Técnico Java</strong> - Udemy (2025)</li>
+                <li><strong>Curso Técnico JavaScript</strong> - Udemy (2025)</li>
+            </ul>
+        </div>
+
+        <div class="social-links">
+            <a href="https://br.linkedin.com/in/ian-albuquerque-a9a782263" target="_blank" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ian960" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:ianjudo5522gmail.com" target="_blank" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
