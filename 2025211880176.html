@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helena Trombetta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-main);
+        }
+
+        :root {
+        --bg-main: #0b3d2e;
+        --bg-gradient1: #135846;
+        --bg-gradient2: #1a6b4d;
+        --bg-accent: #124d37cc;
+
+        --text-main: #e0f2f1;
+        --text-soft: #d1f7c4cc;
+        --text-strong: #b0f2a1;
+        --text-mid: #a5d89f;
+        --text-accent: #a1e887;
+        --highlight: #7adb77;
+        --highlight-soft: #8ce07f;
+        --highlight-alt: #d0ffb8;
+
+        --shadow: rgba(0,0,0,0.6);
+        }
+
+
+        body {
+        background: var(--bg-main);
+        background-image: radial-gradient(circle at top left, var(--bg-gradient1) 10%, transparent 50%),
+                            radial-gradient(circle at bottom right, var(--bg-gradient2) 10%, transparent 50%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+
+
+        .home main {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 32px;
+        align-items: center;
+        min-height: 60vh;
+        }
+
+        .home h2 {
+        font-size: 3.7rem;
+        color: white;
+        font-weight: 900;
+        letter-spacing: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0 8px var(--highlight-soft);
+        }
+
+        .home h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--highlight);
+        margin-top: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .home p {
+        color: var(--text-soft);
+        font-size: 1.1rem;
+        max-width: 480px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+
+        .home main > :nth-child(2) {
+        justify-self: start;
+        }
+
+        @keyframes glowText {
+        0% {
+            text-shadow: 0 0 6px var(--highlight-soft), 0 0 15px var(--highlight), 0 0 25px var(--highlight);
+        }
+        100% {
+            text-shadow: 0 0 12px var(--text-strong), 0 0 20px var(--highlight), 0 0 30px var(--highlight-soft);
+        }
+        }
+
+
+        .about {
+        padding: 50px 60px;
+        background-color: #123e2fdd;
+        border-left: 5px solid var(--highlight);
+        margin: 30px 60px;
+        border-radius: 12px;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: #c3f7afdd;
+        }
+
+
+        .experience {
+        margin: 30px 60px;
+        padding-left: 25px;
+        border-left: 3px solid var(--highlight-soft);
+        font-style: italic;
+        color: #a9db9c;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        }
+
+
+        .contact a {
+        color: var(--highlight-alt);
+        font-size: 1.7rem;
+        margin-right: 20px;
+        transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .contact a:hover {
+        color: var(--highlight-alt);
+        transform: scale(1.3) rotate(15deg);
+        }
+
+
+        .abilities ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 0;
+        color: #a7dca6;
+        font-size: 3rem;
+        text-shadow: 0 0 10px #5bcb45;
+        }
+
+
+        footer {
+        text-align: center;
+        padding: 15px 0;
+        background-color: var(--bg-accent);
+        font-size: 0.9rem;
+        color: #8cd288cc;
+        letter-spacing: 1px;
+        font-weight: 500;
+        }
+    </style>
+
+
+    <section class="home">
+        <main>
+            <h2>Helena Trombetta</h2>
+            <h3>Student at Centro Universitário - UNIESP</h3>
+            <p>Computer Science Student - Teaching Assistant: Front-End + Python
+                | Full Stack Developer | UX/UI Enthusiast | Self-taught & Curious |
+                Open to Remote Opportunities</p>
+        </main>
+    </section>
+    <section class="about">
+        <p class="geral">
+            I am a self-taught programmer and a Computer Science student,
+            passionate about how the web works and how design shapes user
+            experience. My curiosity was the spark that led me into coding, and
+            since then I’ve been the go-to person for solving problems, fixing
+            bugs, and supporting my classmates.
+            I have experience tutoring Front-End Technology and Introduction
+            to Computing, where I not only helped students with Python and
+            HTML/CSS but also created a shared drive with notes, examples,
+            and exercises. Beyond tutoring, I often lead group projects, organize
+            tasks, and make sure things get done.
+            My technical skills include Python, HTML/CSS, JavaScript, PHP,
+            React Native, Node.js, and SQL. I also explore libraries like Pygame
+            and ttk, and I’m growing my knowledge in Cloud and DevOps. On
+            the productivity side, I work well with tools like Notion and Kanban
+            boards to stay organized and support collaboration.
+            Although I’m open to learn whatever I need to participate.
+            Outside of tech, I bring discipline from being an athlete, strong
+            communication, leadership, and creativity. I enjoy Human-Computer
+            Interaction (HCI) and applying usability principles such as Nielsen’s
+            heuristics to my projects.
+            I am looking for remote opportunities in Software Engineering
+            (Full Stack & UX/UI) where I can contribute, learn, and grow while
+            delivering high-quality results.
+            <br />
+            English & Portuguese
+        </p>
+        <p class="experience">
+            Guided students in Python, HTML, and CSS.
+            Created a collaborative drive with study notes, examples, and exercises.
+            Supported peers with debugging and project delivery.
+            Strengthened communication and leadership through mentoring and group
+            coordination.
+        </p>
+        <p class="contact">
+            <a href="https://www.instagram.com/lena_iwbys"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:helenadnttrombetta@gmail.com?subject=About Your Curriculum&body=..."><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/lenadntt"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/helenatrombetta"> <i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </section>
+    <section class="abilities">
+        <ul>    
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-php"></i>
+        </ul>    
+    </section>    
+
+    <footer>
+        <p>Copyright © 2025 Helena Trombetta</p>
+    </footer>
+</body>
+</html>
